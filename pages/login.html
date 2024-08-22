@@ -4,33 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - SoftBank</title>
-    <link rel="stylesheet" href="/SoftBank/assets/styles/login.css" />
+    <link rel="stylesheet" href="/assets/styles/login.css" />
   </head>
   <body>
     <div class="login-container">
       <div class="modal">
-        <img src="/SoftBank/assets/images/image-removebg-preview.png" alt="" />
-            <form onsubmit="redirectToHome(event)">
-            <label for="CPF">CPF</label>
-            <input
-                type="text"
-            name="CPF"
-            id="CPF"
-            placeholder="000.000.000-00"
-            maxlength="14"
-            oninput="maskCPF(this)"
-          /><br />
-          <label for="senha">Senha</label>
+        
+        <div class="esquerda">
+          <img  class= "logo" src="/assets/images/pig.png" alt="" style="margin-top: 22px;" />
+          <button type="button" style="margin-top: 22px;">Criar conta</button>
+        </div>
+
+        <div class="direita">
+          <form onsubmit="redirectToHome(event)" style="margin-top: 32px;">
+          <label for="CPF">CPF</label>
           <input
-            type="password"
-            name="senha"
-            id="senha"
-            placeholder="Informe sua senha"
-          /><br />
-          <button type="submit">Entrar</button>
-        </form>
+              type="text"
+          name="CPF"
+          id="CPF"
+          placeholder="000.000.000-00"
+          maxlength="14"
+          oninput="maskCPF(this)"
+        /><br />
+        <label for="senha">Senha</label>
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Informe sua senha"
+        /><br />
+        <button type="submit">Entrar</button>
+      </form>
+
+        </div>
       </div>
     </div>
-    <script src="/SoftBank/assets/scripts/login.js"></script>
+    <script src="/assets/scripts/login.js"></script>
   </body>
 </html>
