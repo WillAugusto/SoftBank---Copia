@@ -9,33 +9,57 @@
   <body>
     <div class="login-container">
       <div class="modal">
-        
         <div class="esquerda">
-          <img  class= "logo" src="/assets/images/pig.png" alt="" style="margin-top: 22px;" />
-          <button type="button" style="margin-top: 22px;">Criar conta</button>
+          <div class="logo">
+            <img class="img-logo" src="/assets/images/pig.png" alt="" />
+            <img class="text-logo" src="/assets/images/bb1.png" alt="" />
+          </div>
+          <button type="button" >CRIAR CONTA</button>
         </div>
 
         <div class="direita">
-          <form onsubmit="redirectToHome(event)" style="margin-top: 32px;">
-          <label for="CPF">CPF</label>
-          <input
-              type="text"
-          name="CPF"
-          id="CPF"
-          placeholder="000.000.000-00"
-          maxlength="14"
-          oninput="maskCPF(this)"
-        /><br />
-        <label for="senha">Senha</label>
-        <input
-          type="password"
-          name="senha"
-          id="senha"
-          placeholder="Informe sua senha"
-        /><br />
-        <button type="submit">Entrar</button>
-      </form>
+         
+         <div class="titulo">
+           <h1>LOGIN</h1>
 
+         </div>
+
+         <div class="formulario">
+           <form onsubmit="redirectToHome(event)">
+ 
+             <div class="botao">
+               <img src="/assets/images/image 18.png" alt="">
+               
+               <input
+                 type="text"
+                 name="CPF"
+                 id="CPF"
+                 placeholder="000.000.000-00"
+                 maxlength="14"
+                 oninput="maskCPF(this)"
+               /><br />
+             </div>
+       
+             <div class="botao">
+               <img src="/assets/images/image 19.png" alt="">
+               <input
+                 type="password"
+                 name="senha"
+                 id="senha"
+                 placeholder= "Informe sua senha"
+               /><br />
+               
+             </div>
+
+             <div class="remember">
+               <input type="checkbox" name="lembrar-me" id=""> <label for="">Lembrar de mim</label>
+
+             </div>
+             <button id="botao-direita" type="submit">ENTRAR</button>
+ 
+           </form>
+
+         </div>
         </div>
       </div>
     </div>

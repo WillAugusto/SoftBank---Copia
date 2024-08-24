@@ -1,88 +1,243 @@
 /* Estilos globais */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 body,
 html {
-  margin: 0; /* Remove a margem padrão dos elementos body e html */
-  padding: 0; /* Remove o padding padrão dos elementos body e html */
-  font-family: Arial, sans-serif; /* Define a fonte padrão para Arial, e caso não tenha, para sans-serif */
-  background-color: #293131; /* Define uma cor de fundo laranja para toda a página */
-  min-height: 100vh; /* Garante que a altura mínima do body seja 100% da altura da janela (viewport) */
+  margin: 0;
+  /* Remove a margem padrão dos elementos body e html */
+  padding: 0;
+  /* Remove o padding padrão dos elementos body e html */
+  font-family: "Inter", sans-serif;
+  /* Define a fonte padrão para Arial, e caso não tenha, para sans-serif */
+  background-color: #293131;
+  /* Define uma cor de fundo laranja para toda a página */
+  min-height: 100vh;
+  /* Garante que a altura mínima do body seja 100% da altura da janela (viewport) */
 }
 
 /* Estilos para a página de login */
 .login-container {
-  position: relative; /* Define o contexto de posicionamento como relativo para elementos filhos */
-  height: 100vh; /* Define a altura do container para 100% da altura da janela (viewport) */
-  display: flex; /* Utiliza flexbox para alinhar os elementos filhos */
-  justify-content: center; /* Alinha o modal no lado direito do container */
-  align-items: center; /* Centraliza verticalmente o modal dentro do container */
-  padding: 20px; /* Adiciona 20px de padding ao redor do conteúdo do container */
-  box-sizing: border-box; /* Inclui padding e bordas na largura e altura totais do elemento */
+  position: relative;
+  /* Define o contexto de posicionamento como relativo para elementos filhos */
+  height: 100vh;
+  /* Define a altura do container para 100% da altura da janela (viewport) */
+  display: flex;
+  /* Utiliza flexbox para alinhar os elementos filhos */
+  justify-content: center;
+  /* Alinha o modal no lado direito do container */
+  align-items: center;
+  /* Centraliza verticalmente o modal dentro do container */
+  padding: 20px;
+  /* Adiciona 20px de padding ao redor do conteúdo do container */
+  box-sizing: border-box;
+  /* Inclui padding e bordas na largura e altura totais do elemento */
 }
 
-.logo{
+.img-logo {
   width: auto;
-  height: 22.5vh;
+  height: 11.5vh;
+}
+
+/* .esquerda, .direita {
+  margin-top: 0vh;
+} */
+
+.text-logo {
+  width: 20vh;
 }
 
 .esquerda {
-  background-color: #FBFBFF;
-  border-radius: 20px 0px 0px 20px;
-  width: 300px;
-  align-items: center;
+  /* background-color: #FBFBFF; */
+  background: rgb(115, 115, 115);
+  background: linear-gradient(49deg,
+      rgba(115, 115, 115, 0.1) 10%,
+      rgba(205, 205, 205, 0.9) 90%,
+      rgba(217, 217, 217, 1) 100%);
+  border-radius: 24px 0px 0px 24px;
+  width: 40vh;
+  gap: 5vh;
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.direita{
-  background-color: #FBFBFF;
+
+.direita {
+  /* background-color: #FBFBFF; */
+  gap: 7vh;
   border-radius: 0px 20px 20px 0px;
-  width: 300px;
+  width: 60vh;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding: 0px 10px 10px 0px;
+  /* align-items: center; */
+}
+
+.direita h1 {
+  font-size: 7vh;
+  letter-spacing: 1.5vh;
+  font-weight: 300;
+}
+
+/* teste */
+
+.botao {
+  padding: 8px 12px;
+  display: flex;
+  /* align-items: center; */
+  gap: 6px;
+
+  border-radius: 24px;
+  background-color: rgba(217, 217, 217, 0.35);
+  padding-left: 3vh;
+  width: 30vh;
+  height: 4vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.botao img {
+  height: 3vh;
+}
+
+.botao input {
+  height: 3vh;
+  background-color: transparent;
+  border: none;
+  color: #fbfbff;
+  font-size: 20px;
+}
+
+.botao input:focus-visible {
+  outline: none;
+}
+
+
+
+/* .direita .formulario {
+  background-color: rgba(217, 217, 217, 0.35);
+  padding-left: 3vh;
+  width: 30vh;
+  height: 4vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.direita .formulario img {
+  object-fit: cover;
+  height: 3vh
+} */
+.remember{
+  display: flex;
+  align-items: center;
+}
+
+.remember label {
+  font-size: 1.2vh;
+}
+#botao-direita {
+  background-color: #293131;
+  color: #abbe67;
+}
+
+#botao-direita:hover {
+  background-color: #293131;
+  /* Altera a cor do fundo do botão para um laranja mais escuro quando o botão é "hovered" */
+  background-color: rgba(217,
+      217,
+      217,
+      1);
+  /*Altera a cor do fundo do botão para um laranja mais escuro quando o botão é "hovered" */
+  color: #293131;
+  transform: scale(1.05);
+  /*Aumenta o tamanho do botão em 5% quando "hovered" */
+  /* text-shadow: 2px 4px 8px rgba(237, 254, 0, 0.952); Adiciona uma sombra ao texto quando o botão é "hovered" */
+  opacity: 0.7;
 }
 
 .modal {
-  /* background-color: white; Define o fundo do modal como branco */
-  border-radius: 10px; /* Adiciona bordas arredondadas de 10px ao modal */
-  padding: 20px; /* Adiciona 20px de padding dentro do modal */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do modal para dar profundidade */
-  width: 600px; /* Define a largura do modal em 320px */
-  height: 300px;
-  margin-right: 20px; /* Adiciona uma margem de 20px à direita do modal */
-  text-align: center; /* Centraliza o texto dentro do modal */
+  background-color: #abbe67;
+  /*Define o fundo do modal como branco */
+  border-radius: 24px;
+  /* Adiciona bordas arredondadas de 10px ao modal */
+  /* Adiciona 20px de padding dentro do modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adiciona uma sombra ao redor do modal para dar profundidade */
+  width: 100vh;
+  /* Define a largura do modal em 320px */
+  height: 60vh;
+  gap: 2vh;
+  margin-right: 20px;
+  /* Adiciona uma margem de 20px à direita do modal */
+  text-align: center;
+  /* Centraliza o texto dentro do modal */
   display: flex;
 }
 
 .modal label {
-  display: block; /* Exibe os labels como blocos, ocupando toda a largura disponível */
-  margin: 10px 0 5px; /* Adiciona uma margem de 10px em cima e 5px embaixo dos labels */
-  color: #333; /* Define a cor do texto dos labels como um preto suave */
-  text-align: left; /* Alinha o texto dos labels à esquerda */
+  display: flex;
+  /* Exibe os labels como blocos, ocupando toda a largura disponível */
+  margin: 10px 0 5px;
+  /* Adiciona uma margem de 10px em cima e 5px embaixo dos labels */
+  color: #333;
+  /* Define a cor do texto dos labels como um preto suave */
+  text-align: left;
+  /* Alinha o texto dos labels à esquerda */
 }
 
 .modal input {
-  width: calc(
-    90% - 16px
-  ); /* Define a largura dos inputs como 100% do container, menos 16px (para compensar o padding) */
-  padding: 10px; /* Adiciona 10px de padding dentro dos inputs */
-  margin-bottom: 15px; /* Adiciona uma margem inferior de 15px entre os inputs */
-  border: 1px solid #ccc; /* Adiciona uma borda de 1px de cor cinza claro aos inputs */
-  border-radius: 5px; /* Adiciona bordas arredondadas de 5px aos inputs */
-  font-size: 14px; /* Define o tamanho da fonte dos inputs para 14px */
+  width: calc(90% - 16px);
+  padding: 10px;
+  /* Adiciona 10px de padding dentro dos inputs */
+  /* margin-bottom: 15px; Adiciona uma margem inferior de 15px entre os inputs */
+  /* border: 1px solid #ccc; Adiciona uma borda de 1px de cor cinza claro aos inputs */
+  border-radius: 24px;
+  /* Adiciona bordas arredondadas de 5px aos inputs */
+  font-size: 14px;
+  /* Define o tamanho da fonte dos inputs para 14px */
 }
 
 .modal button {
-  width: 90%; /* Define a largura do botão como 100% da largura do modal */
-  padding: 10px; /* Adiciona 10px de padding dentro do botão */
-  background-color: #293131; /* Define o fundo do botão como laranja */
-  border: none; /* Remove a borda padrão do botão */
-  border-radius: 5px; /* Adiciona bordas arredondadas de 5px ao botão */
-  color: white; /* Define a cor do texto do botão como branca */
-  font-size: 16px; /* Define o tamanho da fonte do texto do botão para 16px */
-  cursor: pointer; /* Altera o cursor para o ícone de "mão" quando o usuário passa o mouse sobre o botão */
+  width: 23vh;
+  /* Define a largura do botão como 100% da largura do modal */
+  padding: 10px;
+  /* Adiciona 10px de padding dentro do botão */
+  background-color: rgba(217,
+      217,
+      217,
+      0.35);
+  /* Define o fundo do botão como laranja */
+  border: none;
+  /* Remove a borda padrão do botão */
+  box-shadow: -4px 5px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  border-radius: 20px;
+  /* Adiciona bordas arredondadas de 5px ao botão */
+  color: #293131;
+  /* Define a cor do texto do botão como branca */
+  letter-spacing: 0.5vh;
+  font-size: 15px;
+  /* Define o tamanho da fonte do texto do botão para 16px */
+  cursor: pointer;
+  /* Altera o cursor para o ícone de "mão" quando o usuário passa o mouse sobre o botão */
+  margin-top: 5vh;
 }
 
 .modal button:hover {
-  background-color: #e56f00; /* Altera a cor do fundo do botão para um laranja mais escuro quando o botão é "hovered" */
-  background-color: #196b01; /*Altera a cor do fundo do botão para um laranja mais escuro quando o botão é "hovered" */
-  /* color:black; */
-  /* transform: scale(1.05); Aumenta o tamanho do botão em 5% quando "hovered" */
-  text-shadow: 2px 4px 8px rgba(237, 254, 0, 0.952); /* Adiciona uma sombra ao texto quando o botão é "hovered" */
-  opacity: 0.4;
+  background-color: rgba(217,
+      217,
+      217,
+      0.35);
+  /* Altera a cor do fundo do botão para um laranja mais escuro quando o botão é "hovered" */
+  background-color: #293131;
+  /*Altera a cor do fundo do botão para um laranja mais escuro quando o botão é "hovered" */
+  color: #fbfbff;
+  transform: scale(1.05);
+  /*Aumenta o tamanho do botão em 5% quando "hovered" */
+  /* text-shadow: 2px 4px 8px rgba(237, 254, 0, 0.952); Adiciona uma sombra ao texto quando o botão é "hovered" */
+  opacity: 0.7;
 }
