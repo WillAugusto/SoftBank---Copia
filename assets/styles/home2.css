@@ -1,0 +1,214 @@
+/* Estilos globais */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body,
+html {
+  margin: 0;
+  /* Remove a margem padrão dos elementos body e html */
+  padding: 0;
+  /* Remove o padding padrão dos elementos body e html */
+  font-family: "Inter", sans-serif;
+  /* Define a fonte padrão para Arial, e caso não tenha, para sans-serif */
+  background-color: #ABBE67;
+  /* background-image: url(/assets/images/Login.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  /* Define uma cor de fundo laranja para toda a página */
+  min-height: 100vh;
+  /* Garante que a altura mínima do body seja 100% da altura da janela (viewport) */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh 6vh;
+    background-color: #293131;
+    color: white;
+    gap: 3vh;
+}
+header img {
+    height: 5vh;
+}
+
+.superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3vh;
+    border-bottom: 2px solid rgba(251, 251, 251, 0.35);
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 7vh;
+}
+.right button{
+    background-color: transparent;
+    border: none;
+}
+.right button img{
+   height: 1.5vh;
+}
+
+.right p {
+    font-size: 2vh;
+}
+.saldo-valor {
+    display: flex;
+    align-items: center;
+}
+.block {
+    border-radius: 24px;
+    background-color: antiquewhite;
+    color: antiquewhite;
+}
+
+.right a {
+        /* Herda os estilos da classe .botao */
+        all: unset; /* Remove todas as propriedades CSS padrão do link */
+        /* Reaplica as propriedades desejadas */
+        /* background-color: inherit; */
+        color: inherit;
+        font-size: 2vh;
+        font-weight: bolder;
+        /* padding: inherit; */
+        /* ... e outras propriedades */
+}
+.conta {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+.conta img {
+    height: 3vh;
+}
+
+.conta p {
+    font-size: 2vh;
+    font-weight: bolder;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0vh 7vh;
+}
+nav img {
+    height: 4vh;
+}
+/* nav a {
+    border-right: 2px solid rgba(251, 251, 251, 0.35);
+    padding-right: 5vh;
+} */
+
+.linha-vertical {
+    width: 1px; /* Largura da linha */
+    height: 5vh; /* Altura da linha */
+    border-left: 1px solid rgba(251, 251, 251, 0.3); /* Cor e espessura da borda */
+  }
+
+  main {
+      width: 100%;
+      height: 100vh;
+  }
+
+  .footer {
+    /* padding: 15px 0; Espaçamento interno do rodapé */
+    background-color: #293131; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto do rodapé */
+    /* width: 100%; Faz o rodapé ocupar toda a largura da página */
+    /* margin-top: auto; Empurra o rodapé para o final da página */
+
+    
+        position: sticky;
+        /* bottom: -1000000px; */
+        /* background-color: #f0f0f0; */
+        padding: 3vh 6vh;
+}
+  
+  /* Estilo para o conteúdo do rodapé */
+  .footer-content {
+    /* max-width: 1200px;  */
+    width: 100%;
+    /* Largura máxima do conteúdo do rodapé */
+    /* margin: 0 auto; Centraliza o conteúdo horizontalmente */
+  }
+  
+  /* Estilo para a seção de contato do rodapé */
+  .contact-us {
+    flex: 1;
+     /* Permite que a seção de contato expanda */
+    /* margin-left: ; Margem esquerda negativa para ajustar a posição */
+    margin-bottom: 50px; /* Margem inferior da seção de contato */
+  }
+  
+  /* Estilo para o título da seção de contato */
+  .contact-us h3 {
+    margin: 0 0 10px 0; /* Margens do título */
+    font-size: 18px; /* Tamanho da fonte do título */
+    font-weight: bold; /* Peso da fonte do título */
+  }
+  
+  /* Estilo para a lista de contatos */
+  .contact-us ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove o preenchimento da lista */
+    margin: 0; /* Remove a margem da lista */
+  }
+  
+  /* Estilo para itens individuais da lista de contatos */
+  .contact-us li {
+    display: flex; /* Exibe os itens em linha */
+    align-items: center; /* Alinha verticalmente os itens */
+    font-size: 15px; /* Tamanho da fonte dos itens */
+    margin-bottom: 10px; /* Margem inferior dos itens */
+  }
+  
+  /* Estilo para ícones dentro dos itens da lista de contatos */
+  .contact-us li .icon {
+    width: 24px; /* Largura do ícone */
+    height: 24px; /* Altura do ícone */
+    margin-right: 10px; /* Margem à direita do ícone */
+  }
+  
+  /* Estilo para o contêiner principal no rodapé */
+  .container {
+      width: 100%;
+    display: flex;
+    justify-content: space-between; /* Espaça os itens do contêiner entre si */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    width: 100%; /* Faz o contêiner ocupar toda a largura da página */
+    border-top: 1px solid #ffffff; /* Linha de separação no topo do contêiner */
+    padding-top: 15px; 
+    /* Espaçamento entre a linha e o conteúdo do contêiner */
+  }
+  
+  /* Estilo para o conteúdo à esquerda dentro do contêiner */
+  .left-content {
+    font-size: 18px; /* Tamanho da fonte do conteúdo à esquerda */
+  }
+  
+  /* Estilo para a seção de termos dentro do contêiner */
+  .terms {
+    text-align: right; /* Alinha o texto à direita */
+    margin-top: 0; /* Remove a margem superior */
+  }
+  
+  /* Estilo para links dentro da seção de termos */
+  .terms a {
+    color: #ffffff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin-left: 18px; /* Margem à esquerda dos links */
+  }
+  
+  /* Estilo para links dentro da seção de termos ao passar o mouse */
+  .terms a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  }
+  
+  /* Estilo para parágrafos dentro do conteúdo à esquerda */
+  .left-content p {
+    margin: 0; /* Remove a margem dos parágrafos */
+  }
+  
