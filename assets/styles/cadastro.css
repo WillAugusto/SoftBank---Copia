@@ -10,7 +10,7 @@ html {
   font-family: "Inter", sans-serif;
   /* Define a fonte padrão para Arial, e caso não tenha, para sans-serif */
   /* background-color: #293131; */
-  background-image: url(/assets/images/Login.png);
+  background-image: url(/assets/images/Cadastro.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -18,17 +18,15 @@ html {
   min-height: 100vh;
   /* Garante que a altura mínima do body seja 100% da altura da janela (viewport) */
 }
-
 a {
-  /* Herda os estilos da classe .botao */
-  all: unset; /* Remove todas as propriedades CSS padrão do link */
-  /* Reaplica as propriedades desejadas */
-  /* background-color: inherit; */
-  color: inherit;
-  /* padding: inherit; */
-  /* ... e outras propriedades */
-}
-
+    /* Herda os estilos da classe .botao */
+    all: unset; /* Remove todas as propriedades CSS padrão do link */
+    /* Reaplica as propriedades desejadas */
+    background-color: inherit;
+    color: inherit;
+    padding: inherit;
+    /* ... e outras propriedades */
+  }
 /* Estilos para a página de login */
 .login-container {
   position: relative;
@@ -49,7 +47,7 @@ a {
 
 .img-logo {
   width: auto;
-  height: 11.5vh;
+  height: 14vh;
 }
 
 /* .esquerda, .direita {
@@ -57,7 +55,7 @@ a {
 } */
 
 .text-logo {
-  width: 20vh;
+  width: 25vh;
 }
 
 .esquerda {
@@ -78,7 +76,7 @@ a {
 
 .direita {
   /* background-color: #FBFBFF; */
-  gap: 7vh;
+  /* gap: 7vh; */
   border-radius: 0px 20px 20px 0px;
   width: 60vh;
   display: flex;
@@ -90,8 +88,8 @@ a {
 }
 
 .direita h1 {
-  font-size: 7vh;
-  letter-spacing: 1.5vh;
+  font-size: 4vh;
+  letter-spacing: 1vh;
   font-weight: 300;
 }
 
@@ -130,11 +128,7 @@ a {
   outline: none;
 }
 
-.linha-vertical {
-  width: 1px; /* Largura da linha */
-  height: 3.5vh; /* Altura da linha */
-  border-left: 1px solid rgba(0, 0, 0, 0.3); /* Cor e espessura da borda */
-}
+
 
 /* .direita .formulario {
   background-color: rgba(217, 217, 217, 0.35);
@@ -149,7 +143,14 @@ a {
   object-fit: cover;
   height: 3vh
 } */
+/* .remember{
+  display: flex;
+  align-items: center;
+}
 
+.remember label {
+  font-size: 1.2vh;
+} */
 #botao-direita {
   background-color: #293131;
   color: #abbe67;

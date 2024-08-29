@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - SoftBank</title>
-    <link rel="stylesheet" href="/assets/styles/login.css" />
+    <link rel="stylesheet" href="/assets/styles/cadastro.css" />
   </head>
   <body>
     <div class="login-container">
@@ -14,13 +14,13 @@
             <img class="img-logo" src="/assets/images/pig.png" alt="" />
             <img class="text-logo" src="/assets/images/bb1.png" alt="" />
           </div>
-          <button type="button" ><a href="cadastro.html">CRIAR CONTA</a></button>
+          <!-- <button type="button" >CRIAR CONTA</button> -->
         </div>
 
         <div class="direita">
          
          <div class="titulo">
-           <h1>LOGIN</h1>
+           <h1>CADASTRO </h1>
 
          </div>
 
@@ -28,32 +28,44 @@
            <form onsubmit="redirectToHome(event)">
  
              <div class="botao">
-               <img src="/assets/images/image 18.png" alt="">
-               <div class="linha-vertical"></div>
                <input
                  type="text"
-                 name="CPF"
-                 id="CPF"
-                 placeholder="000.000.000-00"
-                 maxlength="14"
-                 oninput="maskCPF(this)"
+                 name="nome"
+                 id="nome"
+                 placeholder="Nome Completo"
+               /><br />
+             </div>
+             <div class="botao">
+               <input
+                 type="email"
+                 name="email"
+                 id="email"
+                 placeholder="Email"
+               /><br />
+             </div>
+             <div class="botao">
+               <input
+                 type="text"
+                 name="nascimento"
+                 id="nascimento"
+                 placeholder="Data de Nascimento"
                /><br />
              </div>
        
              <div class="botao">
-               <img src="/assets/images/image 19.png" alt="">
-               <div class="linha-vertical"></div>
                <input
-                 type="password"
-                 name="senha"
-                 id="senha"
-                 placeholder= "Informe sua senha"
+                 type="text"
+                 name="CPF"
+                 id="CPF"
+                 placeholder= "CPF"
+                 maxlength="14"
+                 oninput="maskCPF(this)"
                /><br />
                
              </div>
 
              
-             <button id="botao-direita" type="submit">ENTRAR</button>
+             <button id="botao-direita" type="submit"> <a href="login.html">Cadastrar</a> </button>
  
            </form>
 
